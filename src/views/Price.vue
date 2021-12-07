@@ -214,6 +214,7 @@
         </div>
       </div>
     </div>
+    <Footer/>
   </div>
 </template>
 
@@ -221,6 +222,7 @@
 
 import { UsersIcon, CheckIcon } from '@heroicons/vue/outline'
 import Navbar from '../layouts/Navbar.vue'
+import Footer from '../layouts/Footer.vue'
 const hobbyFeatures = ['Поддержка 24/7', 'Помощь с настройкой', 'Разработка качественного приложения']
 const scaleFeatures = ['Продвинутая система учета', 'Удобное управление заказами', 'Поддержка 24/7']
 const growthFeatures = [
