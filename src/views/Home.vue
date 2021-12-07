@@ -7,7 +7,7 @@
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <router-link to="/" class="flex items-center">
               <span class="sr-only">Refactoring</span>
-              <img class="h-10 w-auto sm:h-10" src="../assets/logo-removebg-preview.png" alt="" />
+              <img class="h-10 w-auto sm:h-10" :src="require('../assets/logo-removebg-preview.png')" />
               <h2 class="text-indigo-700 text-lg font-bold">Refactoring</h2>
             </router-link>
           </div>
@@ -157,16 +157,16 @@
           </p>
           <div class="mt-6 grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-4 flex items-center">
             <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img class="h-16" src="../assets/vue_logo-removebg-preview.png"  />
+              <img class="h-16" :src="required('../assets/vue_logo-removebg-preview.png')"  />
             </div>
             <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img class="h-16" src="../assets/nuxt.png"  />
+              <img class="h-16" :src="required('../assets/nuxt.png')"  />
             </div>
             <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
               <img class="h-16 w-auto" src="https://tailwindui.com/img/logos/laravel-logo-gray-400.svg" />
             </div>
            <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img class="h-16 w-auto" src="../assets/vercel.png" />
+              <img class="h-16 w-auto" :src="required('../assets/vercel.png')" />
             </div>
           </div>
         </div>
@@ -208,7 +208,7 @@
                   <footer class="mt-3">
                     <div class="flex items-center space-x-3">
                       <div class="flex-shrink-0">
-                        <img class="h-6 w-6 rounded-full" src="..assets/logo-removebg-preview.png" alt="" />
+                        <img class="h-6 w-6 rounded-full" :src="required('..assets/logo-removebg-preview.png')" alt="" />
                       </div>
                       <div class="text-base font-medium text-gray-700">
                       <p class="text-gray-500"> Eugen Hackimov, Project Manager </p> 
