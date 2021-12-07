@@ -2,32 +2,26 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router/index.js'
 import './assets/index.css' 
-import global from './global/index.js'
+import global from "./global"
 import store from './store'
-import firebase from "firebase/app"
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { required, email } from '@vuelidate/validators'
 
 
 initializeApp({
+    apiKey: "AIzaSyBSRT3HkmD5y8XMOEkF5Tq_6v0ekeAPx4Y",
 
-    apiKey: "AIzaSyAgoFLOY8tJbpmJCmcWPDH5kcYVLWe4LE4",
+    authDomain: "english-words-d4611.firebaseapp.com",
   
-    authDomain: "english-words-1b642.firebaseapp.com",
+    projectId: "english-words-d4611",
   
-    projectId: "english-words-1b642",
+    storageBucket: "english-words-d4611.appspot.com",
   
-    storageBucket: "english-words-1b642.appspot.com",
+    messagingSenderId: "901168815277",
   
-    messagingSenderId: "18791232570",
+    appId: "1:901168815277:web:fd9d6cf399d4954d237a24"
   
-    appId: "1:18791232570:web:75ee5768a70587e1827103",
-  
-    measurementId: "G-G476VGNPYK"
-  
-  })
-
-
-const app = createApp(App).use(router).use(store).use(initializeApp)
+})
+const app = createApp(App).use(router).use(store)
 global(app)
 app.mount("#app")

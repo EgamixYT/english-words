@@ -1,16 +1,16 @@
-<!-- This example requires Tailwind CSS v2.0+ --><!-- This example requires Tailwind CSS v2.0+ -->
+<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <Disclosure as="nav" class="bg-white shadow" v-slot="{ open }">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16">
         <div class="flex">
           <div class="flex-shrink-0 flex items-center">
-            <img class="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow" />
-            <img class="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg" alt="Workflow" />
+            <router-link to="/"><ArrowNarrowLeftIcon class="h-5 w-auto text-gray-500 mr-5"/></router-link>
+            <img class="block lg:hidden h-8 w-auto" src="src\assets\logo-removebg-preview.png" alt="" />
+            <img class="hidden lg:block h-8 w-auto" src="src\assets\logo-removebg-preview.png" alt="Workflow" />
+             <h1 class="text-indigo-700">Refactoring</h1>
           </div>
-          <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-            <router-link class="links" v-for="link in links" :key="link.name" :to="link.route">{{ link.name }}</router-link>
-          </div>
+       
         </div>
         <div class="hidden sm:ml-6 sm:flex sm:items-center">
           <button type="button" class="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
@@ -55,7 +55,7 @@
     <DisclosurePanel class="sm:hidden">
       <div class="pt-2 pb-3 space-y-1">
         <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
-    
+        <DisclosureButton as="a" href="#" class="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Dashboard</DisclosureButton>
         <DisclosureButton as="a" href="#" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Team</DisclosureButton>
         <DisclosureButton as="a" href="#" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Projects</DisclosureButton>
         <DisclosureButton as="a" href="#" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Calendar</DisclosureButton>
@@ -84,7 +84,23 @@
   </Disclosure>
 </template>
 
-<script setup>
-import links from '../data/links.js'
+<script>
+import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
+import { BellIcon, MenuIcon, XIcon, ArrowNarrowLeftIcon } from '@heroicons/vue/outline'
 
+export default {
+  components: {
+    Disclosure,
+    DisclosureButton,
+    DisclosurePanel,
+    Menu,
+    MenuButton,
+    MenuItem,
+    MenuItems,
+    BellIcon,
+    MenuIcon,
+    XIcon,
+    ArrowNarrowLeftIcon
+  },
+}
 </script>

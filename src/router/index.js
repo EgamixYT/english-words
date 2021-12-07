@@ -5,6 +5,8 @@ import {
 import home from '../views/Home.vue'
 import tests from '../views/Tests.vue'
 import login from '../views/Login.vue'
+import reg from '../views/Reg.vue'
+import price from "../views/Price.vue"
 import Navbar from '../layouts/Navbar.vue'
 const routes = [ 
     {
@@ -12,7 +14,7 @@ const routes = [
         component: home,
         name: 'home',
         meta: {
-                layout: 'Navbar'
+               
         }
     },
     {
@@ -30,7 +32,23 @@ const routes = [
       meta: {
           
       }
+  },
+  {
+    path: '/reg',
+    component: reg,
+    name: 'reg',
+    meta: {
+        
+    }
+},
+{
+  path: '/price',
+  component: price,
+  name: 'price',
+  meta: {
+      
   }
+}
 ]
 
 

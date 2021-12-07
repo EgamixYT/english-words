@@ -14,5 +14,10 @@ export default [
         route: '/login',
         isActive: false,
     },
+    {
+        name: 'Reg',
+        route: '/reg',
+        isActive: false,
+    },
 ]
 
