@@ -2,8 +2,8 @@
   "name": "english-words",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "npm run dev",
+    "build": "npm run build",
     "serve": "vite preview"
   },
   "dependencies": {
