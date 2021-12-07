@@ -2,8 +2,8 @@
   "name": "english-words",
   "version": "0.0.0",
   "scripts": {
-    "dev": "npm run dev",
-    "build": "npm run build",
+    "dev": "vite dev",
+    "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
@@ -11,8 +11,6 @@
     "@heroicons/vue": "^1.0.4",
     "@vuelidate/core": "^2.0.0-alpha.32",
     "@vuelidate/validators": "^2.0.0-alpha.25",
-    "firebase": "^9.6.0",
-    "vercel": "^23.1.2",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12",
     "vuex": "^4.0.2"
